@@ -1,42 +1,35 @@
 Config = {}
 
--- NPC, kde začíná práce
 Config.NPC = {
     model = 's_m_y_dockwork_01',
     coords = vec4(-318.8659, -1545.3427, 27.8110, 343.6155)
 }
 
--- Vozidlo popeláře
 Config.Vehicle = 'trash2' 
 
--- Spawn vozidla
 Config.TruckSpawn = vec4(-328.3533, -1529.4839, 27.5346, 268.1578)
 
--- Místo dokončení směny (vrácení vozidla)
 Config.FinishJob = vec3(-318.8659, -1545.3427, 27.8110)
 
--- Seznam popelnic (koresponduje s client.lua)
 Config.Bins = {
     vec3(-157.7669, -1667.8851, 33.1444),
     vec3(-174.6264, -1285.0660, 32.2585),
     vec3(18.4387, -1118.8900, 29.3704),
-    vec3(-772.3187, -218.1060, 38.0501), -- 
-    vec3(-1112.7301, -1052.1781, 2.9030), --
-    vec3(-1181.4087, -1089.0382, 2.7558), --
-    vec3(-1094.4141, -1255.4003, 6.1132), --
-    vec3(-114.9288, -1453.7915, 33.8551), --
-    vec3(-13.2105, -1542.2406, 30.2475), --
-    vec3(253.4827, -1820.2124, 27.5847), --
-    vec3(338.4655, -1967.8126, 25.3712), --
-    vec3(776.6296, -1314.2603, 26.6482), --
+    vec3(-772.3187, -218.1060, 38.0501), 
+    vec3(-1112.7301, -1052.1781, 2.9030), 
+    vec3(-1181.4087, -1089.0382, 2.7558), 
+    vec3(-1094.4141, -1255.4003, 6.1132), 
+    vec3(-114.9288, -1453.7915, 33.8551), 
+    vec3(-13.2105, -1542.2406, 30.2475), 
+    vec3(253.4827, -1820.2124, 27.5847), 
+    vec3(338.4655, -1967.8126, 25.3712), 
+    vec3(776.6296, -1314.2603, 26.6482), 
     vec3(800.4811, -981.5184, 26.8638),
 }
 
--- Kolik popelnic vysypat během směny
-Config.TotalStops = 1
+Config.TotalStops = 5 -- Lze editnout jak chcete.
 
--- Odměna za dokončení směny
 Config.PaymentMin = 7000
 Config.PaymentMax = 14000
 
-Config.JobCooldown = 300 -- 300s = 5 minut
+Config.JobCooldown = 300 
